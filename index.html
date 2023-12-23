@@ -15,8 +15,11 @@
     <main>
         <div class="calculator__container">
             <div class="calculator__body">
+                <div class="calculator__status">
+                    <img src="/assets/imgs/status1.png" alt="Hora">
+                    <img src="/assets/imgs/status2.png" alt="Status">
+                </div>
                 <div class="calculator__visor">
-                    <input class="input__operators" id="operations" type="text" disabled>
                     <input class="input__visor" id="visor" value="0" type="text" disabled>
                 </div>
                 <div class="calculator__pad">
@@ -47,6 +50,9 @@
                         <span class="value button__0" data-id="0">0</span>
                         <span class="oper button__dot" data-id="dot">.</span>
                         <span class="equal button__equal" data-id="equal">=</span>
+                    </div>
+                    <div class="calculator__footer">
+                        <div class="calculator__footer--bar"></div>
                     </div>
                 </div>
             </div>
