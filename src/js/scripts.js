@@ -9,7 +9,6 @@ function getValue() {
             let actualValue = $('#visor').val()
             let value = $(this).attr('data-id')
             if (localStorage.getItem('operator') !== null) {
-                $('#visor').val(0)
                 if (actualValue === '0') {
                     $('#visor').val(value)
                     localStorage.setItem("secondNumber", actualValue + value)
