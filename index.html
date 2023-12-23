@@ -16,43 +16,44 @@
         <div class="calculator__container">
             <div class="calculator__body">
                 <div class="calculator__visor">
-                    <input class="input__operators" type="text" disabled>
-                    <input class="input__visor" value="0" type="text" disabled>
+                    <input class="input__operators" id="operations" type="text" disabled>
+                    <input class="input__visor" id="visor" value="0" type="text" disabled>
                 </div>
                 <div class="calculator__pad">
                     <div class="calculator__pad--firstline">
-                        <span class="button__ac">Ac</span>
-                        <span class="button__back"><img src="/assets/imgs/delete.png" /></span>
-                        <span class="button__division">/</span>
-                        <span class="button__multiply">*</span>
+                        <span class="clear button__ac" data-id="ac">Ac</span>
+                        <span class="oper button__back" data-id="back"><img src="/assets/imgs/delete.png" /></span>
+                        <span class="oper button__division" data-id="division">/</span>
+                        <span class="oper button__multiply" data-id="multiply">*</span>
                     </div>
                     <div class="calculator__pad--secondline">
-                        <span class="button__7">7</span>
-                        <span class="button__8">8</span>
-                        <span class="button__9">9</span>
-                        <span class="button__minus">-</span>
+                        <span class="value button__7" data-id="7">7</span>
+                        <span class="value button__8" data-id="8">8</span>
+                        <span class="value button__9" data-id="9">9</span>
+                        <span class="oper button__minus" data-id="minus">-</span>
                     </div>
                     <div class="calculator__pad--thirdline">
-                        <span class="button__4">4</span>
-                        <span class="button__5">5</span>
-                        <span class="button__6">6</span>
-                        <span class="button__plus">+</span>
+                        <span class="value button__4" data-id="4">4</span>
+                        <span class="value button__5" data-id="5">5</span>
+                        <span class="value button__6" data-id="6">6</span>
+                        <span class="oper button__plus" data-id="plus">+</span>
                     </div>
                     <div class="calculator__pad--fourthline">
-                        <span class="button__1">1</span>
-                        <span class="button__2">2</span>
-                        <span class="button__3">3</span>
+                        <span class="value button__1" data-id="1">1</span>
+                        <span class="value button__2" data-id="2">2</span>
+                        <span class="value button__3" data-id="3">3</span>
                     </div>
                     <div class="calculator__pad--fifthline">
-                        <span class="button__0">0</span>
-                        <span class="button__dot">.</span>
-                        <span class="button__equal">=</span>
+                        <span class="value button__0" data-id="0">0</span>
+                        <span class="oper button__dot" data-id="dot">.</span>
+                        <span class="equal button__equal" data-id="equal">=</span>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="assets/scripts.min.js"></script>
 </body>
 </html>
