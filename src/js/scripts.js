@@ -1,0 +1,2 @@
+/* Lógicas da Calculadora */
+

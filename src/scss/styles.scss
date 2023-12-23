@@ -1,0 +1,155 @@
+div {
+    box-sizing: border-box;
+}
+.calculator__container {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    .calculator__body {
+        width: 375px;
+        height: 685px;
+        border-radius: 39px;
+        background: linear-gradient(191deg, #17181A -4.95%, #17181A 103.74%);
+        .calculator__visor {
+            padding: 0 50px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-top: 40px;
+            input {                
+                border: none;
+                box-shadow: none;
+                background:  linear-gradient(191deg, #17181A -4.95%, #17181A 103.74%);
+                width: 200px;
+                text-align: right;
+            }
+            .input__operators {
+                color: #818181;
+                font-family: 'Poppins';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .input__visor {
+                color: #FFF;
+                font-family: 'Poppins';
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;                
+            }
+        }
+
+        .calculator__pad {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 100px;
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;                
+                width: 52px;
+                height: 50px;
+                border-radius: 16px;
+            }
+            span.button__0 {
+                width: 124px;
+            }
+        
+            .calculator__pad--firstline,
+            .calculator__pad--secondline,
+            .calculator__pad--thirdline,
+            .calculator__pad--fourthline,
+            .calculator__pad--fifthline {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0 50px;
+            }
+            .calculator__pad--thirdline,
+            .calculator__pad--fourthline,
+            .calculator__pad--fifthline {
+                justify-content: flex-start;
+                gap: 22px;                
+            }
+            .button__ac,
+            .button__back {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #616161;
+                color: #A5A5A5;
+                font-family: 'Poppins';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                cursor: pointer;
+            }
+
+            .button__division,
+            .button__multiply,
+            .button__minus,
+            .button__plus,
+            .button__equal {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #005DB2;
+                color: #29A8FF;
+                font-family: Poppins;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                cursor: pointer;
+            }
+            .button__plus,
+            .button__equal {
+                position: absolute;
+                right: 49px;
+                height: 86px;
+                top: 15px;
+            }
+            .button__plus {
+                top: 0;
+            }
+            .button__equal {
+                bottom: 0;
+                top: unset;
+            }
+
+            .button__1,
+            .button__2,
+            .button__3,
+            .button__4,
+            .button__5,
+            .button__6,
+            .button__7,
+            .button__8,
+            .button__9,
+            .button__0,
+            .button__dot {
+                color: #29A8FF;
+                font-family: 'Poppins';
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;                
+                background: #303136;
+                cursor: pointer;
+            }
+        }
+    }    
+}
